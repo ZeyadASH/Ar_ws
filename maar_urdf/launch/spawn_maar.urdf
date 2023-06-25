@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="robot_description" command="cat '$(find maar_urdf)/urdf/mobile_robot.urdf.xacro'"/>
+  <arg name="map_file" default="$(find navstack_pub)/maps/my_map.yaml"/>
+  <arg name="model" default="$(find maar_urdf)/urdf/mobile_robot.urdf.xacro"/>
+</launch>

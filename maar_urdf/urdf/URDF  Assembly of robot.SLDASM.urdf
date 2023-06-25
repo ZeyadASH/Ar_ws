@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="URDF  Assembly of robot.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.103240414538409 0.394707622545221 0.125646870268329"
+        rpy="0 0 0" />
+      <mass
+        value="15.3663381494535" />
+      <inertia
+        ixx="0.109814589965086"
+        ixy="-0.00203895352057199"
+        ixz="-0.000407157237065474"
+        iyy="0.0823458610131425"
+        iyz="0.00018623756915398"
+        izz="0.10765131526601" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.079824 2.8644E-14 6.8709E-11"
+        rpy="0 0 0" />
+      <mass
+        value="1.6412" />
+      <inertia
+        ixx="0.0076951"
+        ixy="8.2806E-17"
+        ixz="3.1503E-13"
+        iyy="0.0042127"
+        iyz="-7.3115E-16"
+        izz="0.0042127" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/left_wheel_link.STL" />
+      </geometry>
+      <material
+        name="left_Wheel">
+        <color
+          rgba="0.50196 0.50196 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/left_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.088354 -0.22173 0.31473"
+      rpy="1.9192 0.0066935 -1.3971" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="right_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.083623 6.872E-11 3.2974E-14"
+        rpy="0 0 0" />
+      <mass
+        value="1.6412" />
+      <inertia
+        ixx="0.0076951"
+        ixy="3.1536E-13"
+        ixz="-6.3426E-18"
+        iyy="0.0042127"
+        iyz="-5.3611E-15"
+        izz="0.0042127" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="right_Wheel">
+        <color
+          rgba="0.50196 0.50196 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/right_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.12149 -0.032852 0.31602"
+      rpy="-2.2249 -0.0066935 1.7445" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="head_link">
+    <inertial>
+      <origin
+        xyz="-0.0329606040914391 -0.089553726133961 1.3217141839883E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.818465228941154" />
+      <inertia
+        ixx="0.00430540964155583"
+        ixy="-5.71529903017121E-05"
+        ixz="8.55051427334631E-07"
+        iyy="0.00507355409422412"
+        iyz="6.15338303093858E-08"
+        izz="0.00382671045636857" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/head_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/head_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0518504620320575 -0.123350075325131 1.3841802398124"
+      rpy="1.56408869020197 -0.0649151395326946 -2.9674778167804" />
+    <parent
+      link="base_link" />
+    <child
+      link="head_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.0784927725357288 0.744427350554523 0.1334504387262"
+        rpy="0 0 0" />
+      <mass
+        value="0.0730821844051508" />
+      <inertia
+        ixx="1.95797983194603E-05"
+        ixy="-4.28400754585724E-07"
+        ixz="1.04110233861554E-07"
+        iyy="4.14178653869594E-05"
+        iyz="-9.60102377118179E-09"
+        izz="2.4125496838055E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF  Assembly of robot.SLDASM/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="-0.10167 -0.090816 -0.21583"
+      rpy="1.5662 0.065095 -0.00015111" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
